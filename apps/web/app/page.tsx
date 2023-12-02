@@ -29,16 +29,18 @@ export default function Page(): JSX.Element {
             {/*  <Expanded className="bg-green-400">
               <div>1</div>
             </Expanded> */}
-            <Flexible className="bg-green-400">
+            <Flexible 
+            grow={false}
+            className="bg-green-400">
               <div>1</div>
             </Flexible>
-            <Flexible className="bg-purple-400">
+            <Flexible  className="bg-purple-400">
               <div>2</div>
             </Flexible>
-            <Flexible className="bg-red-400">
+            <Flexible  grow={true} className="bg-red-400">
               <div>3</div>
             </Flexible>
-            <Flexible className="bg-yellow-400">
+            <Flexible  grow={false} className="bg-yellow-400">
               <div>4</div>
             </Flexible>
           </Row>
