@@ -6,6 +6,12 @@
   "module": "dist/index.mjs",
   "typings": "dist/index.d.ts",
   "type": "module",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --max-warnings 0",
