@@ -1,5 +1,5 @@
 import React from "react";
-import FlutterConstants from "./Constants";
+import FlutterConstants from "./Constants.js";
 
 export function Scaffold({
   appBar,

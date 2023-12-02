@@ -3,17 +3,7 @@
 import Image from "next/image";
 import { Code } from "@repo/ui/code";
 import styles from "./page.module.css";
-import { Column, Row } from "../components";
-import { SizedBox } from "../components/SizedBox";
-import { Padding } from "../components/Padding";
-import { Checkbox } from "../components/Checkbox";
-import { CheckboxListTile } from "../components/CheckboxListTile";
-import { Card } from "../components/Card";
-import { Chip } from "../components/Chip";
-import { Wrap } from "../components/Wrap";
-import { IconButton } from "../components/IconButton";
-import { Expanded } from "../components/Expanded";
-import { Flexible } from "../components/Flexible";
+import { Column, Row, Flexible } from "flutterwind";
 
 export default function Page(): JSX.Element {
   return (
@@ -26,21 +16,16 @@ export default function Page(): JSX.Element {
           padding={8}
         >
           <Row className="bg-white">
-            {/*  <Expanded className="bg-green-400">
-              <div>1</div>
-            </Expanded> */}
-            <Flexible 
-            grow={false}
-            className="bg-green-400">
+            <Flexible grow={false} className="bg-green-400">
               <div>1</div>
             </Flexible>
-            <Flexible  className="bg-purple-400">
+            <Flexible className="bg-purple-400">
               <div>2</div>
             </Flexible>
-            <Flexible  grow={true} className="bg-red-400">
+            <Flexible grow={true} className="bg-red-400">
               <div>3</div>
             </Flexible>
-            <Flexible  grow={false} className="bg-yellow-400">
+            <Flexible grow={false} className="bg-yellow-400">
               <div>4</div>
             </Flexible>
           </Row>

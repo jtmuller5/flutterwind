@@ -1,5 +1,5 @@
 import React from 'react';
-import FlutterConstants from './Constants'; // Make sure to adjust the path to your Constants file
+import FlutterConstants from './Constants.js'; // Make sure to adjust the path to your Constants file
 
 interface PaddingProps {
   children: React.ReactNode;

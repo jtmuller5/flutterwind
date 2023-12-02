@@ -1,5 +1,5 @@
 import React from "react";
-import FlutterConstants, { DaisyConstants } from "./Constants";
+import FlutterConstants, { DaisyConstants } from "./Constants.js";
 import { Center } from "./Center.js";
 
 export function ElevatedButton({

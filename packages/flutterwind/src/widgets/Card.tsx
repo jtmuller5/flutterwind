@@ -1,5 +1,5 @@
 import React from "react";
-import FlutterConstants, { DaisyConstants } from "./Constants";
+import FlutterConstants, { DaisyConstants } from "./Constants.js";
 
 export function Card({
   children,
