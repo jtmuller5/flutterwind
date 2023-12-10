@@ -1,91 +1,69 @@
-# Turborepo starter
+# Flutterwind
 
-This is an official starter Turborepo.
+Flutterwind is a UI component library that bridges the gap between Flutter and React, leveraging the power and simplicity of Tailwind CSS. It's designed to provide a seamless experience for developers familiar with Flutter, allowing them to utilize a similar component structure in their React applications.
 
-## Using this example
+## Benefits
 
-Run the following command:
+- **Familiarity**: Emulates Flutter's widget system, making it intuitive for Flutter developers to build React applications.
+- **Efficiency**: Speeds up the development process with a set of pre-designed, customizable components.
+- **Consistency**: Ensures UI consistency across your application with Tailwind CSS integration.
+- **Responsiveness**: Tailwind CSS integration means every component is responsive and adaptable to various screen sizes.
 
-```sh
-npx create-turbo@latest
+## Installation
+
+To use Flutterwind in your project, install the package via npm:
+
+```bash
+npm install flutterwind
 ```
 
-## What's inside?
+Or via yarn:
 
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
+```bash
+yarn add flutterwind
 ```
 
-### Develop
+## Usage
 
-To develop all apps and packages, run the following command:
-
+Add the Flutterwind styles to your app:
 ```
-cd my-turborepo
-pnpm dev
+import 'flutterwind/dist/style.css'
 ```
 
-To develop just the web app with the Flutterwind packag, run the following command:
-```
-turbo run dev --filter=web
-```
+Here's a quick example to get you started with Flutterwind:
 
-### Remote Caching
+```jsx
+import React from 'react';
+import { Row, Column, Button } from 'flutterwind';
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+const MyComponent = () => {
+  return (
+    <Column className="p-4">
+      <Row className="mb-2">
+        <Button label="Click Me" onPressed={() => alert('Button clicked!')} />
+      </Row>
+      {/* Add more Flutterwind components here */}
+    </Column>
+  );
+};
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
+export default MyComponent;
 ```
 
-## Install Packages
-```
-npm install -D daisyui@latest --workspace=flutterwind
-```
+## Components
 
-## Useful Links
+Flutterwind includes a variety of components such as:
 
-Learn more about the power of Turborepo:
+- `Row` and `Column` for layout control.
+- `Button`, `IconButton`, `Checkbox`, etc., for user interaction.
+- `Card`, `Dialog`, `AppBar`, and more for designing your UI.
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+Each component is customizable with Tailwind CSS classes for a familiar styling approach.
+
+## Contributing
+
+Contributions to Flutterwind are welcome! Whether it's submitting an issue, a pull request, or just a suggestion, all contributions are appreciated and valued.
+
+## License
+
+Flutterwind is [MIT licensed](./LICENSE).
