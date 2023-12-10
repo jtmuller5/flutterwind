@@ -1,0 +1,35 @@
+---
+title: Welcome to Flutterwind
+description: Use the Flutterwind React component library to write React like you write Flutter.
+template: splash
+hero:
+  tagline: You're a Flutter pro. That means you're a React pro, too.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Get Started
+      link: /start/installation/
+      icon: right-arrow
+      variant: primary
+    - text: Read the Flutterwind docs
+      link: /widgets/row
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+
+<CardGrid stagger>
+	<Card title="Flutter Syntax" icon="pencil">
+		Bring everything you know about Flutter to React
+	</Card>
+	<Card title="Widgets = Components" icon="add-document">
+		We've translated a majority of the widgets from the [Flutter Widget Catalog](https://docs.flutter.dev/ui/widgets) into React components
+	</Card>
+	<Card title="Built with Tailwind" icon="setting">
+		The Flutterwind components are built with TailwindCSS (and the DaisyUI plugin) and can be customized adhoc with Tailwind classes
+	</Card>
+	<Card title="Read the docs" icon="open-book">
+		Learn more in [the Flutterwind docs](/guides/example).
+	</Card>
+</CardGrid>
